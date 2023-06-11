@@ -1,16 +1,6 @@
 # Elaine-Luckey-Portfolio
 Elaine-Luckey-Portfolio is a professional portfolio.
 
-## Credits
-Worked with the following classmate while creating portfolio challenge:
-    1. Edward Kim
-    2. Candace Gostinkski
-    3. Lorna
-    4. Jamie Shields
-    5. Austin Dancer
-    6. Kenneth Lau
-    7. Matthew Otabor
-
 ## Purpose:
 The purpose of this project is to present a professional portfolio for myself. This portfolio will include the following:
   1. My name
@@ -21,7 +11,13 @@ The purpose of this project is to present a professional portfolio for myself. T
 
 ## Credits:
 While creating this work, I worked with the following classmates:
-  1. ENTER HERE
+    1. Edward Kim (sited in HMTL & CSS where assistance was given)
+    2. Candace Gostinkski
+    3. Lorna
+    4. Jamie Shields
+    5. Austin Dancer
+    6. Kenneth Lau
+    7. Matthew Otabor
 
 ## License: 
 Please refer to the LICENSE in the rep
