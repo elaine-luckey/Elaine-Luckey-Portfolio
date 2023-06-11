@@ -17,4 +17,4 @@ Please refer to the LICENSE in the rep
 
 ## Link to Deployed Application
 
-## Screentshot of Deployed Application
+## Screenshot of Deployed Application
