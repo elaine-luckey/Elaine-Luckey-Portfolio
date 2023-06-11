@@ -1,0 +1,219 @@
+/* IMPORTED FONT STYLE FOR ALL TEXT ON THE PAGE FROM GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@700&display=swap');
+
+/* UNIVERSAL SETTING TO CLEAR ALL THE BROWSER SPECIFIC SETTINGS */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Arima', cursive;
+    color: whitesmoke;
+}
+
+/* HTML BEHAVIOR THAT WILL CREATE A SMOOTH SCROLL INSTEAD OF A CHOPPY SCROLL */
+html {
+    scroll-behavior: smooth;
+}
+
+/* NAVIGATION BAR SETTINGS BEGINS HERE */
+
+/* NAVIGATION BAR "ELAINE" TITLE */
+.nav-bar p {
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+/* NAVIGATION BAR SETTING THE BACKGROUND TO BE THE IMAGE AND TO SPAN ACROSS THE ENTIRE PAGE */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-image: url("../looking-stars.jpeg");
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* NAVIGATION BAR HEADER THAT CONTROLS ALL THE LOCATION AND POSITIONING OF THE LINKS (GET TO KNOW ME, PROJECTS BY ELAINE, AND CONTACT ME */
+.nav-bar ul {
+    list-style-type: none;
+    display: flex;
+    margin-top: 50px;
+    text-decoration: none;
+}
+
+/* CONTROLS THE SPACING, FONT SIZE, COLOR, AND UPPERCASE SETTINGS ON THE LINKS */
+.nav-bar a {
+    text-decoration: none;
+    margin: 0 2rem;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+/* BODY OF THE PAGE BEGINS HERE */
+
+/* MAIN BODY BACKGROUND COLOR */
+main {
+    background-color: #111213;
+    width: 100%;
+}
+
+/* ABOUT IMAGE WIDTH IN CONTAINER */
+.about-image-container {
+    width: 75%;
+}
+
+/* ABOUT IMAGE HEIGHT, BORDER RADIUS (ROUNDNESS) & WIDTH OF IMAGE */
+#about img {
+    height: 100%;
+    border-radius: 50%;
+    width: 100%;
+}
+
+/* ABOUT CONTAINER THAT ALIGNS THE PROFILE PICTURE AND ABOUT ME SECTION TO BE SIDE BY SIDE & CENTERED */
+.about-container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+    gap: 6rem;
+}
+
+/* ABOUT CONTAINER HEADER SIZE */
+.about-container h1 {
+
+    margin-bottom: 2rem;
+}
+
+/* "GET TO KNOW ME" HEADER CONTAINER */
+.about-bio-container h1 {
+    font-size: 2.5rem;
+}
+
+/* PROFILE PICTURE IMAGE CONTAINER */
+.about-container img {
+    margin-top: 100px;
+}
+
+/* ABOUT CONTAINER WITH GET TO KNOW ME INFO */
+.about-bio-container p {
+    font-size: 1.25rem;
+}
+
+/* ABOUT CONTAINER BULLET POINTS */
+#bio-bullet-points {
+    display: flex;
+    margin-right: 60%;
+    font-size: 1.25rem;
+    justify-content: center;   
+}
+
+/*  CONTAINER FOR ALL THE PROJECTS */
+.project-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* "PROJECTS BY ELAINE" HEADER CONTAINER */
+.project-header-container h2 {
+    font-size: 2.5rem;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+/* PROJECT 1 ITEMS */
+
+/* CONTAINER FOR PROJECT 1 LABEL THAT DETERMINES IT SITS IN THE CENTER */
+.label-project-one {
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* CONTAINER FOR ALL OF PROJECT 1 */
+.project-1-container {
+    justify-content: center;
+    display: flex;
+}
+
+/* PROJECT 1 BORDER FOR IMAGE */
+.project-one-border {
+    position: relative;
+    background-image: url("../veil-nebula-supernova-remnant-full-width.jpg");
+    width: 1000px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid plum;
+}
+
+/* CONTAINER FOR THE PROJECT 1 TITLE & MAKES IT APPEAR SMALLER AND IN ITS OWN BOX */
+#image-title-1 {
+    position: relative;
+    color: white;
+    text-align: center;
+    background-color: plum;
+    padding: 10px;
+}
+
+/* "PROJECT 1" TITLE INSIDE THE TITLE CONTAINER */
+#image-title-1 h3 {
+    font-size: 1.5rem;
+}
+
+/* PROJECT 2 & 3 */
+
+/* CONTAINER TO CREATE A SECOND ROW OF PROJECTS */
+.row-two {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 2rem;
+    gap: 5rem;
+}
+
+/* CONTAINERS FOR PROJECT TWO & THREE IMAGES SETTING THE SIDE AND BORDER */
+.project-two-img-container img,
+.project-three-img-container img {
+    width: 450px;
+    height: 300px;
+    border: 5px solid whitesmoke;
+}
+
+/* CONTAINER TO CREATE A THIRD ROW OF PROJECTS */
+.row-three {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 2rem;
+    gap: 5rem;
+}
+
+/* CONTAINERS FOR PROJECT FOUR & FIVE IMAGES SETTING THE SIDE AND BORDER */
+.project-four-img-container img,
+.project-five-img-container img {
+    width: 450px;
+    height: 300px;
+    border: 5px solid whitesmoke;
+}
+
+@media (max-width: 425px) {
+    .nav-bar {
+        max-width: 100%;
+        margin: 0 auto; 
+        }
+    }
+
+    
+@media (max-width: 425px) {
+    .about-image-container {
+        max-width: 600px;
+        margin: 0 auto; 
+        }
+    }
