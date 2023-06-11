@@ -13,6 +13,7 @@
     text-decoration: none;
 }
 
+/* Assisted by Edward Kim */
 /* HTML BEHAVIOR THAT WILL CREATE A SMOOTH SCROLL INSTEAD OF A CHOPPY SCROLL */
 html {
     scroll-behavior: smooth;
@@ -27,12 +28,12 @@ html {
 /* NAVIGATION BAR "ELAINE" TITLE */
 .nav-bar p {
     font-size: 4rem;
-    /* text-transform: uppercase; */
     margin-left: 50px;
     margin-top: 20px;
     font-family: 'Over the Rainbow', cursive;
 }
 
+/* Assisted by Edward Kim */
 /* NAVIGATION BAR SETTING THE BACKGROUND TO BE THE IMAGE AND TO SPAN ACROSS THE ENTIRE PAGE */
 .nav-bar {
     display: flex;
@@ -46,6 +47,7 @@ html {
     position: relative;
 }
 
+/* Assisted by Edward Kim */
 /* NAVIGATION BAR HEADER THAT CONTROLS ALL THE LOCATION AND POSITIONING OF THE LINKS (GET TO KNOW ME, PROJECTS BY ELAINE, AND CONTACT ME */
 .nav-bar ul {
     list-style-type: none;
@@ -147,12 +149,13 @@ main {
     display: flex;
 }
 
+/* Assisted by Edward Kim */
 /* PROJECT 1 BORDER FOR IMAGE */
 .project-one-border {
     position: relative;
     background-image: url("../images/veil-nebula-supernova-remnant-full-width.jpg");
-    width: 1000px;
     height: 500px;
+    width: 1200px;
     border: 5px solid plum;
     background-size: cover;
     background-position: center;
@@ -330,17 +333,17 @@ main {
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
-    
 }
 
+/* CONTACT ME INFORMATION */
 .contact-me-information {
     display: block;
-    margin-left: 150px;
     list-style: none;
 }
 
 .contact-me-information li {
     font-size: 1.10rem;
+    text-align: center;
 }
 
 #contact-me {
@@ -361,18 +364,156 @@ main {
     font-size: 0.8rem;
 }
 
-
-@media (max-width: 425px) {
+/* Assisted by Edward Kim for all of media section */
+/* MEDIA ADJUSTMENTS WHEN THE SCREEN SHRINKS TO MOBILE & TABLET VIEW */
+@media screen and (max-width: 970px) {
     .nav-bar {
-        max-width: 100%;
-        margin: 0 auto; 
-        }
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        text-size-adjust: 30px;
     }
 
+    .about-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    } 
     
-@media (max-width: 425px) {
-    .about-image-container {
-        max-width: 600px;
-        margin: 0 auto; 
-        }
+    .about-bio-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        
     }
+
+    .about-bio-container h1 {
+        flex-wrap: wrap;
+    }
+
+    .about-image-container {
+        width: 50%;
+    }
+
+    .project-one-border {
+        height: 400px;
+        width: 700px;
+    }
+
+    .project-two-border,
+    .project-three-border,
+    .project-four-border,
+    .project-five-border {
+        height: 300px;
+        width: 300px;
+    }
+
+
+}
+
+ 
+
+@media screen and (max-width: 550px) {
+    .nav-bar {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .nav-bar p {
+        display: none;
+    }
+
+    .nav-header a {
+        flex-flow: wrap;
+    } 
+
+    .about-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    } 
+    
+    .about-bio-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        
+    }
+
+    .about-bio-container h1 {
+        flex-wrap: wrap;
+    }
+
+    .about-image-container {
+        width: 50%;
+    }
+
+    .project-one-border {
+        height: 200px;
+        width: 300px;
+    }
+
+    .project-two-border,
+    .project-three-border,
+    .project-four-border,
+    .project-five-border {
+        height: 200px;
+        width: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    .nav-bar {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        
+    }
+
+    .nav-bar p {
+        display: none;
+    }
+
+    .nav-header a {
+        flex-flow: wrap;
+    } 
+
+    .about-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    } 
+    
+    .about-bio-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        
+    }
+
+    .about-bio-container h1 {
+        flex-wrap: wrap;
+    }
+
+    .about-image-container {
+        width: 50%;
+    }
+
+    .project-one-border {
+        height: 200px;
+        width: 300px;
+    }
+
+    .project-two-border,
+    .project-three-border,
+    .project-four-border,
+    .project-five-border {
+        height: 100px;
+        width: 100px;
+    }
+
+}
