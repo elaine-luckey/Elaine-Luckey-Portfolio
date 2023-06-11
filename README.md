@@ -11,6 +11,7 @@ The purpose of this project is to present a professional portfolio for myself. T
 
 ## Credits:
 While creating this work, I worked with the following classmates:
+
     1. Edward Kim (sited in HMTL & CSS where assistance was given)
     2. Candace Gostinkski
     3. Lorna
