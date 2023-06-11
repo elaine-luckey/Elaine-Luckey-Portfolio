@@ -24,5 +24,7 @@ While creating this work, I worked with the following classmates:
 Please refer to the LICENSE in the rep
 
 ## Link to Deployed Application
+https://elaine-luckey.github.io/Elaine-Luckey-Portfolio/
 
 ## Screenshot of Deployed Application
+![Elaine-Portfolio](https://github.com/elaine-luckey/Elaine-Luckey-Portfolio/assets/134161776/9dbdbf73-d795-4768-a891-6a88a88b3b09)
