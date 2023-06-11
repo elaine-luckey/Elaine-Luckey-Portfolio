@@ -1,5 +1,6 @@
 /* IMPORTED FONT STYLE FOR ALL TEXT ON THE PAGE FROM GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap');
 
 /* UNIVERSAL SETTING TO CLEAR ALL THE BROWSER SPECIFIC SETTINGS */
 *{
@@ -9,6 +10,7 @@
     font-size: 16px;
     font-family: 'Arima', cursive;
     color: whitesmoke;
+    text-decoration: none;
 }
 
 /* HTML BEHAVIOR THAT WILL CREATE A SMOOTH SCROLL INSTEAD OF A CHOPPY SCROLL */
@@ -16,14 +18,19 @@ html {
     scroll-behavior: smooth;
 }
 
+.page-container {
+    background-color: #111213;
+}
+
 /* NAVIGATION BAR SETTINGS BEGINS HERE */
 
 /* NAVIGATION BAR "ELAINE" TITLE */
 .nav-bar p {
     font-size: 4rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin-left: 50px;
     margin-top: 20px;
+    font-family: 'Over the Rainbow', cursive;
 }
 
 /* NAVIGATION BAR SETTING THE BACKGROUND TO BE THE IMAGE AND TO SPAN ACROSS THE ENTIRE PAGE */
@@ -31,7 +38,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background-image: url("../looking-stars.jpeg");
+    background-image: url("../images/looking-stars.jpeg");
     height: 250px;
     background-position: center;
     background-repeat: no-repeat;
@@ -60,13 +67,12 @@ html {
 
 /* MAIN BODY BACKGROUND COLOR */
 main {
-    background-color: #111213;
     width: 100%;
 }
 
 /* ABOUT IMAGE WIDTH IN CONTAINER */
 .about-image-container {
-    width: 75%;
+    width: 100%;
 }
 
 /* ABOUT IMAGE HEIGHT, BORDER RADIUS (ROUNDNESS) & WIDTH OF IMAGE */
@@ -87,7 +93,6 @@ main {
 
 /* ABOUT CONTAINER HEADER SIZE */
 .about-container h1 {
-
     margin-bottom: 2rem;
 }
 
@@ -134,7 +139,6 @@ main {
 .label-project-one {
     display: flex;
     justify-content: center;
-    
 }
 
 /* CONTAINER FOR ALL OF PROJECT 1 */
@@ -146,20 +150,19 @@ main {
 /* PROJECT 1 BORDER FOR IMAGE */
 .project-one-border {
     position: relative;
-    background-image: url("../veil-nebula-supernova-remnant-full-width.jpg");
+    background-image: url("../images/veil-nebula-supernova-remnant-full-width.jpg");
     width: 1000px;
     height: 500px;
-    justify-content: center;
-    align-items: center;
     border: 5px solid plum;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
 }
 
 /* CONTAINER FOR THE PROJECT 1 TITLE & MAKES IT APPEAR SMALLER AND IN ITS OWN BOX */
 #image-title-1 {
     position: relative;
-    color: white;
     text-align: center;
-    background-color: plum;
     padding: 10px;
 }
 
@@ -167,8 +170,6 @@ main {
 #image-title-1 h3 {
     font-size: 1.5rem;
 }
-
-/* PROJECT 2 & 3 */
 
 /* CONTAINER TO CREATE A SECOND ROW OF PROJECTS */
 .row-two {
@@ -178,12 +179,69 @@ main {
     gap: 5rem;
 }
 
-/* CONTAINERS FOR PROJECT TWO & THREE IMAGES SETTING THE SIDE AND BORDER */
-.project-two-img-container img,
-.project-three-img-container img {
-    width: 450px;
+/* PROJECT 2 */
+
+/* CONTAINER FOR PROJECT 2 LABEL THAT DETERMINES IT SITS IN THE CENTER */
+.label-project-two {
+    display: flex;
+    justify-content: center;
+}
+
+/* PROJECT 2 BORDER FOR IMAGE */
+.project-two-border {
+    position: relative;
+    background-image: url("../images/hoag_hubble_960.webp");
+    width: 500px;
     height: 300px;
-    border: 5px solid whitesmoke;
+    border: 5px solid plum;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+}
+
+/* CONTAINER FOR THE PROJECT 2 TITLE & MAKES IT APPEAR SMALLER AND IN ITS OWN BOX */
+#image-title-2 {
+    position: relative;
+    text-align: center;
+
+    padding: 5px;
+}
+
+/* "PROJECT 2" TITLE INSIDE THE TITLE CONTAINER */
+#image-title-2 h3 {
+    font-size: 1.5rem;
+}
+
+/* PROJECT 3 */
+
+/* CONTAINER FOR PROJECT 3 LABEL THAT DETERMINES IT SITS IN THE CENTER */
+.label-project-three {
+    display: flex;
+    justify-content: center;
+}
+
+/* PROJECT 3 BORDER FOR IMAGE */
+.project-three-border {
+    position: relative;
+    background-image: url("../images/quasar-1675959706.png");
+    width: 500px;
+    height: 300px;
+    border: 5px solid plum;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+}
+
+/* CONTAINER FOR THE PROJECT 3 TITLE & MAKES IT APPEAR SMALLER AND IN ITS OWN BOX */
+#image-title-3 {
+    position: relative;
+    text-align: center;
+    padding: 5px;
+}
+
+/* "PROJECT 3" TITLE INSIDE THE TITLE CONTAINER */
+#image-title-3 h3 {
+    font-size: 1.5rem;
 }
 
 /* CONTAINER TO CREATE A THIRD ROW OF PROJECTS */
@@ -195,13 +253,114 @@ main {
     gap: 5rem;
 }
 
-/* CONTAINERS FOR PROJECT FOUR & FIVE IMAGES SETTING THE SIDE AND BORDER */
-.project-four-img-container img,
-.project-five-img-container img {
-    width: 450px;
-    height: 300px;
-    border: 5px solid whitesmoke;
+/* PROJECT 4 */
+
+/* CONTAINER FOR PROJECT 4 LABEL THAT DETERMINES IT SITS IN THE CENTER */
+.label-project-four {
+    display: flex;
+    justify-content: center;
 }
+
+/* PROJECT 4 BORDER FOR IMAGE */
+.project-four-border {
+    position: relative;
+    background-image: url("../images/Thorne-Zytekow-object.webp");
+    width: 500px;
+    height: 300px;
+    border: 5px solid plum;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+}
+
+/* CONTAINER FOR THE PROJECT 4 TITLE & MAKES IT APPEAR SMALLER AND IN ITS OWN BOX */
+#image-title-4 {
+    position: relative;
+    text-align: center;
+    padding: 5px;
+}
+
+/* "PROJECT 4" TITLE INSIDE THE TITLE CONTAINER */
+#image-title-4 h3 {
+    font-size: 1.5rem;
+}
+
+/* PROJECT 5 */
+
+/* CONTAINER FOR PROJECT 5 LABEL THAT DETERMINES IT SITS IN THE CENTER */
+.label-project-five {
+    display: flex;
+    justify-content: center;
+}
+
+/* PROJECT 5 BORDER FOR IMAGE */
+.project-five-border {
+    position: relative;
+    background-image: url("../images/pulsar-planet.webp");
+    width: 500px;
+    height: 300px;
+    border: 5px solid plum;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+}
+
+/* CONTAINER FOR THE PROJECT 5 TITLE & MAKES IT APPEAR SMALLER AND IN ITS OWN BOX */
+#image-title-5 {
+    position: relative;
+    text-align: center;
+    padding: 5px;
+}
+
+/* "PROJECT 5" TITLE INSIDE THE TITLE CONTAINER */
+#image-title-5 h3 {
+    font-size: 1.5rem;
+}
+
+#projects a:hover {
+    opacity: 0.7;
+}
+
+/* CONTACT ME SECTION OF PAGE */
+
+/* "CONTACT ME" HEADER CONTAINER */
+.contact-me-container h2 {
+    font-size: 2.5rem;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.contact-me-information {
+    display: block;
+    margin-left: 150px;
+    list-style: none;
+}
+
+.contact-me-information li {
+    font-size: 1.10rem;
+}
+
+#contact-me {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 75px;
+}
+
+.footer-info{
+    display: flex;
+    justify-content: center;
+}
+
+.copyright {
+    display: flex;
+    color: whitesmoke;
+    font-size: 0.8rem;
+}
+
 
 @media (max-width: 425px) {
     .nav-bar {
